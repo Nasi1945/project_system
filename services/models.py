@@ -15,7 +15,7 @@ class Attribute(models.Model):
         ordering = ('created_at',)
         
         
-class service(models.Model):
+class Service(models.Model):
     name = models.CharField(max_length=120)
     content = models.TextField(default='این سرویس کار شما را راحت تر کرده است')
     image = models.ImageField(upload_to='services', default='service.jpg')
